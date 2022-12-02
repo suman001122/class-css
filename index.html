@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: aqua;
+        }
+
+        .flex-container { 
+            display: flex;
+        }
+
+        .left-menu{
+            flex: 20%;
+        }
+
+        .right-menu{
+            flex: 80%;
+            flex-direction: row;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 90px;
+        }
+
+        nav ul li a {
+            font-size: 22px;
+            text-decoration:none ;
+            color: brown;
+        }
+        .dropdown .drop-down-list{
+            position: absolute;
+            width: 100px;
+            left: 740px;
+            display: block;
+            /* box-shadow: ; */
+            display:none;
+        }
+        .dropdown:hover .drop-down-list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex-container">
+        <div class="left-menu">
+            <h1>logo</h1>
+        </div>
+        <div class="right-menu">
+            <ul>
+                <li> <a href="">home</a> </li>
+                <li> <a href="">about</a> </li>
+                <li class="dropdown"> <a href="">destination</a>
+                    <div class="drop-down-list">
+                        <a href="">delhi</a>
+                        <a href="">dehradun</a>
+                        <a href="">nainital</a>
+                        <a href="">risikesh</a>
+                    </div>
+                </li>
+                
+                <li> <a href="">Gallery </a> </li>
+               
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
